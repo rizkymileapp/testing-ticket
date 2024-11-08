@@ -15,8 +15,8 @@ Ticket Hint adalah Mini AI Project menggunakan Flask yang menerima input pertany
 ### 1. Clone Repository
 Clone repository ini ke komputer Anda:
 ```
-git clone https://github.com/rizkymileapp/tets-project.git
-cd tets-project
+git clone https://github.com/rizkymileapp/testing-ticket.git
+cd testing-ticket
 ```
 
 ### 2. Buat dan Aktifkan Virtual Environment
