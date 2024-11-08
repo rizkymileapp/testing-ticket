@@ -1,16 +1,51 @@
-# Mini AI Project
+# Ticket Hint
 
-Mini AI Project adalah API sederhana menggunakan Flask yang menerima input pertanyaan dan memberikan respons konfirmasi statis.
+Ticket Hint adalah Mini AI Project menggunakan Flask yang menerima input pertanyaan dan memberikan respons yang sudah diproses supaya memberikan output yang diharapkan.
 
-## Fitur
+## 📋 Fitur
 - Menerima input pertanyaan (ticket) melalui endpoint API.
-- Mengembalikan respons JSON dengan pesan statis.
+- Mengembalikan saran dari ticket yang diinputkan dengan respons JSON.
 
-## Cara Menjalankan
+## 🛠️ Teknologi yang Digunakan
+- Python 3.10
+- Flask (Framework web Python)
 
-### 1. Persiapan
-Pastikan Python sudah terinstal di komputer Anda. Aktifkan virtual environment:
-```bash
+## 📦 Instalasi
+
+### 1. Clone Repository
+Clone repository ini ke komputer Anda:
+```
+git clone https://github.com/rizkymileapp/tets-project.git
+cd tets-project
+```
+
+### 2. Buat dan Aktifkan Virtual Environment
+Buat virtual environment untuk mengisolasi proyek:
+```
 python -m venv venv
 venv\Scripts\activate
 ```
+
+### 3. Instal Dependencies
+Instal Flask dan dependencies lainnya:
+```
+pip install -r requirements.txt
+```
+
+### 4. Menjalankan Aplikasi
+Jalankan aplikasi Flask dengan perintah berikut:
+```
+python app.py
+```
+Aplikasi akan berjalan di http://127.0.0.1:5000/.
+
+### 5. Menggunakan cURL
+Anda dapat menguji API menggunakan cURL atau Postman.
+```
+curl -X POST http://127.0.0.1:5000/ticket-response \
+-H "Content-Type: application/json" \
+-d "{\"question\": \"Saya tidak bisa login ke akun saya\"}"
+```
+
+
+
