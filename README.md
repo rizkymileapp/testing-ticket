@@ -1,46 +1,46 @@
 # Ticket Hint
 
-Ticket Hint adalah Mini AI Project menggunakan Flask yang menerima input pertanyaan dan memberikan respons yang sudah diproses supaya memberikan output yang diharapkan.
+Ticket Hint is a Mini AI Project built with Flask that accepts input questions and processes them to provide the desired output.
 
-## 📋 Fitur
-- Menerima input pertanyaan (ticket) melalui endpoint API.
-- Mengembalikan saran dari ticket yang diinputkan dengan respons JSON.
+## 📋 Features
+- Accepts question inputs (tickets) via an API endpoint.
+- Returns suggestions for the inputted ticket in a JSON response.
 
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technologies Used
 - Python 3.10
-- Flask (Framework web Python)
+- Flask (Python Web Framework)
 
-## 📦 Instalasi
+## 📦 Installation
 
 ### 1. Clone Repository
-Clone repository ini ke komputer Anda:
+Clone this repository to your computer:
 ```
 git clone https://github.com/rizkymileapp/testing-ticket.git
 cd testing-ticket
 ```
 
-### 2. Buat dan Aktifkan Virtual Environment
-Buat virtual environment untuk mengisolasi proyek:
+### 2. Create and Activate a Virtual Environment
+Create a virtual environment to isolate the project:
 ```
 python -m venv venv
 venv\Scripts\activate
 ```
 
 ### 3. Instal Dependencies
-Instal Flask dan dependencies lainnya:
+Install Flask and other required dependencies:
 ```
 pip install -r requirements.txt
 ```
 
-### 4. Menjalankan Aplikasi
-Jalankan aplikasi Flask dengan perintah berikut:
+### 4. Run the Application
+Run the Flask application with the following command:
 ```
 python app.py
 ```
-Aplikasi akan berjalan di http://127.0.0.1:5000/.
+The application will be available at `http://127.0.0.1:5000/`.
 
-### 5. Menggunakan cURL
-Anda dapat menguji API menggunakan cURL atau Postman.
+### 5. Using cURL
+You can test the API using cURL or Postman.
 ```
 curl -X POST http://127.0.0.1:5000/ticket-response \
 -H "Content-Type: application/json" \
